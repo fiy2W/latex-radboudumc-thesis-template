@@ -1,0 +1,106 @@
+\documentclass[twoside]{RadboudReport}
+
+\usepackage[english]{babel}      % Sets document language to English
+\usepackage{graphicx}            % Required for inserting images
+\usepackage[hidelinks]{hyperref} % Makes links in document clickable and adds
+                                 % the \href{}{} command to create hyperlinks
+
+% Independent reference for each chapter
+\usepackage[sectionbib]{chapterbib}
+\usepackage{cite}
+
+% Other usepackage
+\usepackage{etoolbox}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{marvosym}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{emptypage}
+\usepackage{pythonhighlight}
+%\usepackage{algpseudocode}
+\usepackage{fancybox}
+\usepackage{amsfonts}
+\usepackage{bbm}
+\usepackage{tabularx}
+
+\title{Thesis Title}
+\author{Author Name}
+
+\isbnnumber{xxx-xx-xxxx-xxx-x}
+\copyrightname{xxx, 2025}
+\coverdetails{xxx}
+\productiondetails{xxx Printing, xxx}
+
+\defendingdate{xxxxday xx xxxx 20xx}
+\defendingtime{xx.xx am}
+\borndate{xxx}
+\bornplace{xxx}
+
+\promotor{
+xxx \\
+xxx
+}
+\copromotor{
+xxx \\
+xxx}
+
+\committee{
+xxx \\
+xxx
+}
+
+\begin{document}
+\headerpage
+\infopage
+\thesistitlepage
+\promotorpage
+\cleardoublepage
+
+% Table of contents
+\setcounter{tocdepth}{0}
+\renewcommand{\contentsname}{Table of Contents}
+\tocloftpagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+
+% Chapters
+\clearpage
+\thispagestyle{empty}
+~
+\cleardoublepage
+\include{chapters/introduction/introduction}
+
+
+\part{Part Name}\label{part:part1}
+\cleardoublepage
+\include{chapters/chapter2/chapter}
+
+
+\part{Part Name}\label{part:part2}
+\cleardoublepage
+\include{chapters/chapter3/chapter}
+\include{chapters/chapter4/chapter}
+
+
+\part{Part Name}\label{part:part3}
+\cleardoublepage
+\include{chapters/chapter5/chapter}
+
+
+\part{General discussion and summary}\label{part:summary}
+\cleardoublepage
+\include{chapters/discussion/discussion}
+\include{chapters/summary}
+\include{chapters/dutchsummary}
+
+\include{chapters/addenda}
+
+\end{document}
