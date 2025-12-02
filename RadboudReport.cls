@@ -332,7 +332,7 @@
             
             To obtain the degree of Doctor \\
             at Radboud University Nijmegen \\
-            on the authority of the rector magnificus Prof. Dr. J.H.J.M van Krieken, \\
+            on the authority of the rector magnificus Prof. Dr. J.M. Sanders, \\
             to be defended in public on \\
             on \thedefendingdate \\
             at \thedefendingtime
